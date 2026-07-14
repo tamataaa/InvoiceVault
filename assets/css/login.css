@@ -1,0 +1,121 @@
+*{
+    font-family:'Poppins',sans-serif;
+}
+
+body.login-page{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    position:relative;
+    background:linear-gradient(135deg,#eef5ff 0%,#dbeafe 100%);
+}
+
+.login-wrapper{
+    position:relative;
+    width:100%;
+    max-width:440px;
+    padding:20px;
+    z-index:2;
+}
+
+.login-card{
+    position:relative;
+    overflow:hidden;
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.login-logo{
+    width:80px;
+    height:80px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#0d6efd;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    color:#fff;
+}
+
+.login-title{
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.login-subtitle{
+    color:#6c757d;
+    margin-bottom:0;
+}
+
+.form-control{
+    height:50px;
+    border-radius:12px;
+}
+
+.login-btn{
+    height:50px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.login-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(13,110,253,.25);
+}
+
+body.login-page::before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    border-radius:50%;
+    background:rgba(13,110,253,.08);
+    top:-180px;
+    left:-160px;
+    filter:blur(10px);
+}
+
+body.login-page::after{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:rgba(13,110,253,.07);
+    bottom:-150px;
+    right:-120px;
+    filter:blur(10px);
+}
+
+.login-wrapper::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:30px;
+    background:rgba(255,255,255,.25);
+    top:-70px;
+    right:-120px;
+    transform:rotate(35deg);
+    backdrop-filter:blur(4px);
+}
+
+.login-wrapper::after{
+    content:"";
+    position:absolute;
+    width:140px;
+    height:140px;
+    border-radius:25px;
+    background:rgba(255,255,255,.18);
+    bottom:-70px;
+    left:-90px;
+    transform:rotate(-25deg);
+}
